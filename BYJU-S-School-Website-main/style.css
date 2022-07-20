@@ -1,0 +1,297 @@
+@media (min-width: 500px) {
+    body {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content, .display {
+      float: none;
+      width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    clear: right;
+    min-height: 80vh;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#heading {
+    display: flex;
+    background-color: rgb(38, 1, 88);
+    position: sticky;
+    top: 0;
+    transition: 0.4s;
+    padding: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    z-index: 99999;
+}
+
+#name {
+    font-size: 50px;
+    font-weight: 900;
+    color: purple;
+    padding-left: 1%;
+    padding-right: 10%;
+    margin-top: 1%;
+}
+
+#navigate {
+    float: right;
+    text-align: right;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navigate a, #navigate a:visited {
+    padding: 10px;   
+    margin: 30px;
+    border-radius: 10px;
+    color: black;
+    -webkit-text-stroke: 0.2px red;
+    background: azure;  
+    text-decoration: none;
+    border: 1px solid black; 
+}
+
+#navigate a:hover {
+    background-color: rgba(63, 25, 255, 0.76);
+    color: white;
+}
+
+header #title{
+    text-align: center;
+    margin-top: 17%;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 70px;
+    color: firebrick;
+    -webkit-text-stroke: 0.5px black;
+    font-family: "Lucida Handwriting";
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+main,footer {
+    padding: 0 1%;
+}
+
+.description:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content {
+    float: left;
+    width: 70%;
+  }
+  
+  .display {
+    float: right;
+    width: 30%;
+  }
+
+.display img {
+    display: block;
+    float: right;
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center; font-size: xx-large;
+}
+
+form input {
+    overflow: hidden;
+    font: 20px "";
+    margin: 2%;
+}
+
+.content img {
+    padding: 0% 1%;
+}
+
+table, tr, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    border-spacing: 10px;
+    vertical-align: middle;
+}    
+th {
+    text-align: center;
+    font-weight: 900;
+}
+
+table img {
+    float: left; margin-top: -10%;
+}
+
+.image {
+    width: 40vw;
+    height: 40vw;
+    padding: 10px;
+    margin-left: calc(5vw);
+    float: left;
+}
+
+.image:hover {
+    width: 42vw;
+    opacity: 0.5;
+}
+
+.container div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+     -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+ul {
+    display: block;
+    justify-items: space-around;
+}
+
+li {
+    margin-right: 10%;
+    padding-bottom: 3%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    float: left;
+}
+
+.container div span {
+    font-size: 15px;
+}
+
+.form .details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% /2 -20px)
+}
+
+.form .details .input-box input {
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.button {
+    text-align: center; 
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+.click {
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(to right, #71b7e6, #9b59b6);
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+.click:hover {
+    background: linear-gradient(to left, #71b7e6, #9b59b6);
+    color: black;
+}
+
+.click:active {
+    background: purple;
+    color: white;
+}
+
+.slide-container {
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 600%;
+    height: 50%;
+    margin: 0 0 0 0;
+    position: relative;
+    text-align: center;
+    animation-name: slide-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.image-container img {
+    overflow: hidden;
+    object-fit: cover;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    height: 80vh;
+}
+
+@keyframes slide-animation {
+    0% {left: 0;}
+    10% {left: -1200px;}
+    20% {left: -2400px;}
+    30% {left: -3600px;}
+    40% {left: -4800px;}
+    50% {left: -6000px;}
+    60% {left: -4800px;}
+    70% {left: -3600px;}
+    80% {left: -2400px;;}
+    90% {left: -1200px;}
+    100% {left: 0;}
+}
+
